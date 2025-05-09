@@ -1,12 +1,81 @@
+/* Importación de iconos de Bootstrap */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css");
+
 * {
     box-sizing: border-box;
 }
 
+:root {
+    --color-1: #FF9800;
+    --color-2: #DE424D;
+    --color-3: #FFB74D;
+}
+
+.texto-blanco {
+    color: white;
+}
+
+.negrita {
+    font-weight: bold;
+}
 
 .logo {
     border-radius: 50%;
 }
 
 .menu-navegacion {
-    background-color: #FF9800;
+    background-color: var(--color-1);
+}
+
+.opc-nav {
+    /* background-color: red; */
+    width: 100%;
+    justify-content: center;
+    gap: 5%;
+    text-shadow: 2px 2px 4px #00000070;
+    font-weight: 500;
+}
+
+.carrito {
+    font-size: 20px;
+}
+
+.sombra-texto {
+    text-shadow: 3px 7px 4px #00000070;
+    font-weight: bold;
+}
+
+.carrusel {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagenes-carrusel {
+    width: 100%;    
+}
+
+.tamano-imagenes {
+    width: 100%;
+    height: 10%;
+}
+
+.contenido-principal {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cont-tarjetas {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.btn-red {
+    background-color: var(--color-2);
+}
+
+.card {
+    background-color: red;
 }
