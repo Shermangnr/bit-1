@@ -1,52 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+
     <!-- Archivo CSS -->
     <link rel="stylesheet" href="./styles/index.css">
-    <title>Pagina de inicio</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icons/casa-perro.png" type="image/x-icon">
+    <title>CatDog - Pagina de inicio</title>
 </head>
+
 <body>
     <!-- Manejo de error para cuando JS no se ejecuta el error -->
     <noscript>JavaScript is mandatory</noscript>
     <!-- _____________________________________________________ -->
-    <!-- Inicio Menu de navegación -->
-    <nav class="menu-navegacion navbar navbar-expand-lg shadow p-3 mb-5">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="./assets/icons/logo.jpg" class="logo" alt="Logo-PetShop" width="30" height="24" class="d-inline-block align-text-top">
-                PetShop - CatDog</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./views/contacto.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./views/contacto.html">Ofertas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./views/contacto.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./views/contacto.html">Ubicaciones</a>
-                    </li>
-                </ul>
-                <form action="#">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                </form>
+
+    <header>
+        <!-- Inicio Menu de navegación -->
+        <nav class="menu-navegacion navbar navbar-expand-lg shadow p-3 mb-5">
+            <div class="container-fluid">
+                <a class="navbar-brand sombra-texto" href="index.html">
+                    <img src="./assets/icons/logo.jpg" class="logo" alt="Logo-PetShop" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    PetShop - CatDog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="opc-nav navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/contacto.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/contacto.html">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/contacto.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/contacto.html">Ubicaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="carrito bi bi-cart-fill"></i></a>
+                        </li>
+                    </ul>
+                    <form action="#">
+                        <input class="form-control me-2" type="search" placeholder="Buscar producto"
+                            aria-label="Buscar">
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Fin Menu de Navegación -->
+
+        <!-- Inicio carrusel de imagenes banner -->
+        <div class="carrusel">
+            <div class="imagenes-carrusel">
+                <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/images/banner1.gif" class="tamano-imagenes d-block"
+                                alt="Gif de banner número 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/images/banner2.gif" class="tamano-imagenes d-block"
+                                alt="Gif de banner número 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/images/banner3.gif" class="tamano-imagenes d-block"
+                                alt="Gif de banner número 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
-    </nav>
-    <!-- Fin Menu de Navegación -->
+        <!-- Fin Carrusel de imagenes Banner -->
+
+    </header>
+
+    <!-- Inicio contenido principal -->
+    <main class="contenido-principal">
+        <!-- Inicio contenedor para las tarjetas de Productos / Ofertas -->
+        <div class="cont-tarjetas">
+            <!-- Inicio Tarjeta Productos -->
+            <div class="card text-center mb-3" style="width: 45rem; height: 20rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Nuevos productos</h5>
+                    <p class="card-text">¡Descubre los nuevos productos pensados en tu mascota!</p>
+                    <a href="#" class="btn btn-red texto-blanco negrita">Ver catalogo</a>
+                </div>
+            </div>
+            <!-- Fin Tarjeta Productos -->
+
+            <!-- Inicio Tarjeta Ofertas -->
+            <div class="card text-center mb-3" style="width: 45rem; height: 20rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-red texto-blanco negrita">Go somewhere</a>
+                </div>
+            </div>
+            <!-- Fin Tarjeta Ofertas -->
+        </div>
+        <!-- Fin contenedor para las tarjetas de Productos / Ofertas -->
+    </main>
+    <!-- Fin contenido principal -->
+
+    <footer>
+
+    </footer>
+
 
 
 
@@ -55,8 +138,11 @@
 
     <!-- _____________________________________________________ -->
     <!-- Script de Bootsrap 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
     <!-- Archivo JS -->
     <script src="./js/index.js"></script>
 </body>
+
 </html>
