@@ -23,7 +23,7 @@
 
     <header>
         <!-- Inicio Menu de navegación -->
-        <nav class="menu-navegacion navbar navbar-expand-lg shadow p-3 mb-5">
+        <nav class="menu-navegacion navbar navbar-expand-lg shadow p-3 mb-5 sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand sombra-texto" href="index.html">
                     <img src="./assets/icons/logo.jpg" class="logo" alt="Logo-PetShop" width="30" height="24"
@@ -101,9 +101,9 @@
     <!-- Inicio contenido principal -->
     <main class="contenido-principal">
         <!-- Inicio contenedor para las tarjetas de Productos / Ofertas -->
-        <div class="cont-tarjetas">
+        <div class="cont-tarjetas p-3 gap-4">
             <!-- Inicio Tarjeta Productos -->
-            <div class="card text-center mb-3 shadow" style="width: 45rem; height: 20rem;">
+            <div class="tarjeta-1 card text-center mb-3 shadow" style="width: 45rem; height: 20rem;">
                 <div class="card-body d-flex align-items-center justify-content-center">
                     <div class="opt">
                         <h5 class="card-title">Nuevos productos</h5>
@@ -115,18 +115,29 @@
             <!-- Fin Tarjeta Productos -->
 
             <!-- Inicio Tarjeta Ofertas -->
-            <div class="card text-center mb-3 shadow" style="width: 45rem; height: 20rem;">
+            <div class="tarjeta-2 card text-center mb-3 shadow" style="width: 45rem; height: 20rem;">
                 <div class="card-body d-flex align-items-center justify-content-center">
                     <div class="opt">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-danger texto-blanco negrita">Go somewhere</a>
+                        <h5 class="card-title">Ofertas / Descuentos</h5>
+                        <p class="card-text">Todos los días tenemos ofertas y descuentos.</p>
+                        <a href="#" class="btn btn-danger texto-blanco negrita">Ver ofertas</a>
                     </div>
                 </div>
             </div>
             <!-- Fin Tarjeta Ofertas -->
         </div>
         <!-- Fin contenedor para las tarjetas de Productos / Ofertas -->
+
+        <!-- Inicio contenedor Productos -->
+        <div class="cont-productos">
+            <div class="text-center">
+                <h2>Productos</h2>
+                <p>Explora <a href="#" class="texto-rojo">aquí</a> todos los productos que tenemos para tus mascotas</p>
+            </div>
+            <!-- Inicio carrusel de productos -->
+            
+            <!-- Fin carrusel de productos -->
+        </div>
     </main>
     <!-- Fin contenido principal -->
 
