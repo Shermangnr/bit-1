@@ -117,6 +117,14 @@
     justify-content: space-around;
 }
 
+.t-prod {
+    transition: transform 0.3s;
+}
+
+.t-prod:hover {
+    transform: scale(1.1);
+}
+
 .anterior, .siguiente {
     width: 50px;
     height: 50px;
@@ -144,7 +152,7 @@
 }
 
 .img-ubicacion {
-    border: 1px solid black;
+    border: 1px solid #9191916e;
     border-radius: 50%;
     padding: 1rem;
     width: 70px;
@@ -159,6 +167,7 @@
 
 .cont-logo {
     width: 20%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -177,4 +186,37 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
+}
+
+.icono-redes {
+    color: black;
+}
+
+.icono-redes:hover {
+    color: #3b3b3b;
+}
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+}
+
+.btn-whatsapp img {
+    width: 60px;
+    height: 60px;
 }
