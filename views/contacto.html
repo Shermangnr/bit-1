@@ -19,7 +19,7 @@
     <!-- _____________________________________________________ -->
     
     <!-- Inicio Menu de navegación -->
-    <nav class="menu-navegacion navbar navbar-expand-xl shadow p-3 mb-5 sticky-top">
+    <nav class="menu-navegacion navbar navbar-expand-xl shadow p-3 mb-4 sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand sombra-texto" href="../index.html">
                 <img src="../assets/icons/logo.jpg" alt="Logo-PetShop" width="30" height="24"
@@ -35,7 +35,7 @@
                         <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#productos">Productos</a>
+                        <a class="nav-link" href="../index.html">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Ofertas</a>
@@ -44,10 +44,10 @@
                         <a class="nav-link" href="#">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#ubicaciones">Ubicaciones</a>
+                        <a class="nav-link" href="../index.html">Ubicaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./views/contacto.html">Contacto</a>
+                        <a class="nav-link" href="../views/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="carrito bi bi-cart-fill"></i></a>
@@ -61,27 +61,89 @@
     </nav>
     <!-- Fin Menu de Navegación -->
 
-
-
-    <h1>Contacto</h1>
-    <form id="formularioContacto">
-        <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="tu-nombre apellido" name="nombre">
+    <main id="principal-contacto">
+        <div class="dudas">
+            <h1>¿Tienes alguna duda?</h1>
         </div>
-        <div class="mb-3">
-            <label for="mensaje" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="mensaje" rows="3" name="mensaje"></textarea>
+        <div class="cont-perro-call">
+            <img src="../assets/images/perro-call.jpg" class="perro-call" alt="Imagen de perro en Call Center">
         </div>
+        <div class="mensaje">
+            <p>Dejame tus datos y un mensaje, pronto estare en contacto contigo:</p>
+        </div>
+        <div class="cont-formulario">
+            <div class="formulario">
+                <form id="formularioContacto">
+                    <div class="mb-1 text-center">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Nombre y Apellido" name="nombre" required>
+                    </div>
+                    <div class="mb-1 text-center">
+                        <label for="correo" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="correo@ejemplo.com" name="correo" required>
+                    </div>
+                    <div class="mb-1 text-center">
+                        <label for="mensaje" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="mensaje" rows="3" name="mensaje" placeholder="Deja aquí tu pregunta o comentario" required></textarea>
+                    </div>
+            
+                    <div class="text-center mt-3">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
 
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
+    <!-- Inicio pie de pagia -->
+    <footer>
+        <div class="cont-footer p-3">
+            <div class="cont-logo">
+                <a href="../index.html"><img src="../assets/icons/logo.jpg" class="logo-footer shadow-lg"
+                        alt="Logo de CatDog"></a>
+            </div>
+            <div class="desc-footer text-center d-flex justify-content-center">
+                <p class="texto-pequeno m-0 negrita">PetShop CatDog S.A.</p>
+                <p class="texto-pequeno m-0">¿Tienes alguna sugerencia?</p>
+                <p class="texto-pequeno m-0"><span class="negrita">Contacto: </span>contacto.principal@catdog.com</p>
+                <p class="texto-pequeno m-0">Consulta aquí nuestra <span class="negrita"><i>Política de tratamiento de
+                            datos.</i></span></p>
+                <p class="texto-pequeno m-0 negrita">Dirección principal:</p>
+                <p class="texto-pequeno m-0"><i>Calle 128a #53a - 39 - Edificio Palo verde - Prado Veraniego - Bogotá
+                        Colombia</i></p>
+                <p class="texto-pequeno">Prohibida su reproducción total o parcial sin autorización escrita de su
+                    titular.</p>
+                <p class="texto-pequeno m-0">&copy; 2025 PetShop CatDog. Todos los derechos reservados.texto-pequeno
+                </p>
+            </div>
+            <div class="cont-redes">
+                <div class=" d-flex justify-content-center mt-2 gap-3">
+                    <a href="https://www.instagram.com/" target="_blank" class="icono-redes"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/?locale=es_LA" target="_blank" class="icono-redes"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/?lang=es" target="_blank" class="icono-redes"><i
+                            class="bi bi-twitter-x"></i></a>
+                    <a href="https://co.pinterest.com/" target="_blank" class="icono-redes"><i
+                            class="bi bi-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin pie de pagina -->
 
+    <a href="https://wa.me/573134180071" class="btn-whatsapp" target="_blank" aria-label="Chatea con nosotros por WhatsApp">
+        <img src="../assets/icons/whatsapp.png" alt="WhatsApp" />
+    </a>
     
     <!-- Alerta de bootstrap 5 -->
     <div id="alerta-construccion" class="alert alert-warning alert-dismissible fade d-none" role="alert">
         <i class="bi bi-tools"></i>
         <strong> Ooops!</strong> Este módulo se encuentra en construcción...
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+    </div>
+    <div id="alerta-contacto" class="alert alert-success alert-dismissible fade d-none" role="alert">
+        <span id="alerta-contacto-texto"></span>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
     </div>
     <!-- _____________________________________________________ -->
