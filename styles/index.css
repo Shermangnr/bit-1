@@ -221,6 +221,21 @@
     height: 60px;
 }
 
+#alerta-construccion {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#alerta-construccion.show {
+    opacity: 1;
+}
+
 @media (max-width: 992px) {
     .cont-tarjetas-productos {
         width: 100%;
