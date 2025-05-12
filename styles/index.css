@@ -1,15 +1,15 @@
 /* Importación de iconos de Bootstrap */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css");
-
-* {
-    box-sizing: border-box;
-}
-
 :root {
     --color-1: #FF9800;
     --color-2: #DE424D;
     --color-3: #FFB74D;
 }
+
+* {
+    box-sizing: border-box;
+}
+
 
 .texto-blanco {
     color: white;
@@ -219,4 +219,147 @@
 .btn-whatsapp img {
     width: 60px;
     height: 60px;
+}
+
+@media (max-width: 992px) {
+    .cont-tarjetas-productos {
+        width: 100%;
+        display: flex !important;
+        gap: 2rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .t-prod {
+        width: 230px !important;
+    }
+
+    .btn-nav-siguiente, .btn-nav-anterior {
+        padding: 0 !important;
+    }
+
+    .cont-ubicaciones {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .descripcion {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boton-mapa {
+        margin-top: 10px !important;
+    }
+
+    .ubicaciones {
+        margin-top: 20px;
+        display: flex !important;
+        flex-direction: row;        
+        width: 100%;
+        gap: 60px !important;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .cont-tarjetas-productos {
+        width: 100%;
+        display: flex !important;
+        gap: 1rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .t-prod {
+        width: 180px !important;
+    }
+
+    .btn-nav-siguiente, .btn-nav-anterior {
+        padding: 0 !important;
+    }
+
+    .cont-ubicaciones {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .descripcion {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boton-mapa {
+        margin-top: 10px !important;
+    }
+
+    .ubicaciones {
+        display: flex !important;
+        flex-direction: row;        
+        width: 100%;
+        gap: 100px !important;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .cont-tarjetas-productos {
+        flex-wrap: wrap;
+        overflow-x: auto;
+        padding: 0 1rem;
+        margin-bottom: 10px;
+        flex-direction: row;
+        gap: 5px !important;
+    }
+
+    .t-prod {
+        flex: 0 0 100%;
+        max-width: 80%;
+        margin: 0 10px;
+        transition: transform 0.3s;
+    }
+    
+    .t-prod:hover {
+        transform: scale(0.95);
+    }
+
+    .cont-ubicaciones {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .descripcion {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boton-mapa {
+        margin-top: 10px !important;
+    }
+
+    .ubicaciones {
+        display: flex !important;
+        flex-direction: row;        
+        width: 100%;
+        gap: 20px !important;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
