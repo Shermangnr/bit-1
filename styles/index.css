@@ -117,3 +117,50 @@
     width: 50px;
     height: 50px;
 }
+
+.cont-ubicaciones {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 7rem;
+    margin-top: 1rem;
+}
+
+.ubicaciones {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin-top: 1rem;
+}
+
+.img-ubicacion {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 70px;
+    height: 70px;
+}
+
+.cont-footer {
+    display: flex;
+    flex-direction: row;
+    background-color: yellowgreen;
+}
+
+.cont-logo {
+    width: 20%;
+}
+
+.desc-footer {
+    width: 60%;
+}
+
+.cont-redes {
+    width: 20%;
+}
