@@ -26,7 +26,7 @@ Bienvenido al proyecto **PetShop CatDog**, una landing page responsiva construid
 
 ### 📱 Responsive para productos en móviles
 
-- A partir de **576px o menos**:
+- A partir de **576px o más**:
   - Las tarjetas de productos se muestran **una por una** (scroll horizontal).
   - Los botones de navegación `anterior/siguiente` se posicionan en la **parte superior** y se achican visualmente.
 
